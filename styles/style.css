@@ -42,10 +42,10 @@
 
 /* контейнер логотипа */
 .header__logo {
-  display: block;
-  width: 148px;
   position: absolute;
   left: calc(50% - 148px/2);
+  display: block;
+  width: 148px;
   margin: auto;
 }
 
@@ -67,11 +67,11 @@
 .header__address {
   display: flex;
   flex-direction: column;
+  max-width: 240px;
   color: #000;
   font-size: 18px;
-  line-height: 1.35;
   font-style: normal;
-  max-width: 240px;
+  line-height: 1.35;
 }
 
 .cover {

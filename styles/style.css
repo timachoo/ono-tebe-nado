@@ -1,1 +1,128 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 92px 24px 96px 24px;
+}
+
+/* контейнер навигации */
+.header__menu {
+  
+}
+
+/* список ссылок */
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: circle;
+}
+
+/* пункт списка ссылок */
+.header__links-list-item {
+  
+}
+
+/* сделать ссылку без кружочка перед ней */
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+/* ссылка */
+.header__link {
+  color: #000;
+  font-size: 18px;
+  line-height: normal;
+}
+
+/* активная ссылка */
+.header__link_active .header__link {
+  text-decoration: none;
+}
+
+/* контейнер логотипа */
+.header__logo {
+  display: block;
+  width: 148px;
+  position: absolute;
+  left: calc(50% - 148px/2);
+  margin: auto;
+}
+
+/* картинка с логотипом */
+.header__logo-image {
+  width: 100%;
+}
+
+/*контейнер с адресом*/
+.address {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* потребуется, чтобы выравнивать блок с адресом. В футере используется другое выравнивание */
+.header__address {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.35;
+  font-style: normal;
+  max-width: 240px;
+}
+
+.cover {
+
+}
+
+/*overlay — полупрозрачный блок поверх секции;
+cover__title — заголовок;
+aligned-text, aligned-text_center и aligned-text_right — классы для выравнивания строк текста и превращения их в блочный элемент;
+letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
+no-letter-spacing — класс для обнуления общего межбуквенного расстояния для последней буквы;
+cover__description — контейнер для подзаголовка и кнопки;
+cover__description-text — текст подзаголовка;
+bet-button — кнопка «Сделать ставку».*/
+
+.lots {
+
+}
+
+/*lots__heading — заголовок секции;
+lots__card-list — список карточек;
+lots__card-list-item — пункт списка карточки;
+card-link — ссылка, обрамляющая карточку;
+card — карточка;
+card_type_film, card_type_book и card_type_picture — классы, чтобы задать определённый фон каждой из карточек;
+overlay — он уже есть у вас в коде;
+card__title — заголовок карточки;
+card__text — текст карточки;
+lots__look-more-link — ссылка «Посмотреть больше».*/
+
+.about {
+
+}
+
+/*about__column — класс для колонок;
+about__logo — контейнер с логотипом;
+about__logo-image — изображение логотипа;
+about__title — заголовок секции;
+about__text — блок для текстов секции.*/
+
+.footer {
+
+}
+
+/*address — такой класс уже есть в вашей вёрстке, все вложенные элементы аналогичны;
+footer__menu — блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом;
+footer__menu-list — список пунктов меню;
+footer__menu-list-item — пункт списка меню;
+footer__menu-link — ссылка меню;
+footer__menu-link_active — активная ссылка меню (без подчёркивания);
+footer__social-list — список ссылок на социальные сети. Можно не добавлять тег <nav>, потому что это ссылки на внешние ресурсы;
+footer__social-list-item — пункт списка ссылок на социальные сети;
+footer__social-link — ссылка на социальные сети;
+footer__social-icon — иконка социальной сети.*/

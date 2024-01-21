@@ -6,22 +6,12 @@
   padding: 0px 26px;
 }
 
-/* контейнер навигации */
-.header__menu {
-  
-}
-
 /* список ссылок */
 .header__links-list {
   display: flex;
   flex-direction: row;
   gap: 32px;
   list-style: circle;
-}
-
-/* пункт списка ссылок */
-.header__links-list-item {
-  
 }
 
 /* сделать ссылку без кружочка перед ней */
@@ -60,26 +50,21 @@
 .address {
   display: flex;
   flex-direction: column;
+  max-width: 240px;
   color: #000;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
-  max-width: 240px;
-}
-
-/* потребуется, чтобы выравнивать блок с адресом. В футере используется другое выравнивание */
-.header__address {
-  
 }
 
 .cover {
   position: relative;
+  height: 757px;
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 757px;
 }
 
 /* полупрозрачный блок поверх секции */
@@ -199,11 +184,6 @@
   margin-top: 27px;
 }
 
-/* ссылка, обрамляющая карточку */
-.card-link {
-
-}
-
 /* карточка */
 .card {
   position: relative;
@@ -274,11 +254,6 @@
   margin: 146px 24px 0px 24px;
 }
 
-/* класс для колонок */
-.about__column {
- 
-}
-
 /* контейнер с логотипом */
 .about__logo {
   display: flex;
@@ -320,10 +295,10 @@
 }
 
 .footer {
-  margin: 180px 50px 90px 50px;
   display: flex;
   justify-content: space-between;
   align-content: start;
+  margin: 180px 50px 90px 50px;
 }
 
 /* блок навигации по списку ссылок */
@@ -337,16 +312,6 @@
   list-style: none;
 } 
 
-/* пункт списка меню */
-.footer__menu-list-item {
-
-}
-
-/* ссылка меню */
-.footer__menu-link {
-  
-}
-
 /* активная ссылка меню (без подчёркивания) */
 .footer__menu-link_active {
   text-decoration: none;
@@ -354,14 +319,9 @@
 
 /* список ссылок на социальные сети */
 .footer__social-list {
-  list-style: none;
   display: flex;
   gap: 48px;
-}
-
-/* пункт списка ссылок на социальные сети */
-.footer__social-list-item {
-
+  list-style: none;
 }
 
 /* ссылка на социальные сети */
@@ -369,9 +329,4 @@
   display: block;
   width: 48px;
   height:  48px;
-}
-
-/* иконка социальной сети */
-.footer__social-icon {
-
 }

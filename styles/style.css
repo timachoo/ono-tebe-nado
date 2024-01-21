@@ -76,17 +76,99 @@
 }
 
 .cover {
-
+  position: relative;
+  padding: 165px 50px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: -125px;
+  background-size: auto 100%;
 }
 
-/*overlay — полупрозрачный блок поверх секции;
-cover__title — заголовок;
-aligned-text, aligned-text_center и aligned-text_right — классы для выравнивания строк текста и превращения их в блочный элемент;
-letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
-no-letter-spacing — класс для обнуления общего межбуквенного расстояния для последней буквы;
-cover__description — контейнер для подзаголовка и кнопки;
-cover__description-text — текст подзаголовка;
-bet-button — кнопка «Сделать ставку».*/
+/* полупрозрачный блок поверх секции */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0,0,0, 0.6);
+}
+
+/* заголовок */
+.cover__title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  line-height: 1.15; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+/* выравнивания строк текста и превращения их в блочный элемент */
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+/* класс для обнуления общего межбуквенного расстояния для последней буквы */
+.no-letter-spacing {
+  letter-spacing: initial;
+}
+
+/* контейнер для подзаголовка и кнопки */
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 78px;
+  margin-top: 135px;
+}
+
+/* текст подзаголовка */
+.cover__description-text {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  word-spacing: 18px;
+  
+}
+
+/* кнопка «Сделать ставку» */
+.bet-button {
+  width: 257px;
+  height: 52px;
+  border: 1px;
+  border-style: solid;
+  border-color: #FFF;
+  padding: 12px 32px 12px 32px;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+}
 
 .lots {
 

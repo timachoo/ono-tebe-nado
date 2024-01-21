@@ -81,7 +81,7 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: -125px;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 /* полупрозрачный блок поверх секции */
@@ -90,6 +90,7 @@
   inset: 0;
   z-index: 0;
   background: rgba(0,0,0, 0.6);
+  background-size: auto 95%;
 }
 
 /* заголовок */

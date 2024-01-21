@@ -52,7 +52,8 @@
 
 /* картинка с логотипом */
 .header__logo-image {
-  width: 100%;
+  width: 148px;
+  height: 114px;
 }
 
 /*контейнер с адресом*/
@@ -61,18 +62,14 @@
   flex-direction: column;
   color: #000;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.35;
+  max-width: 240px;
 }
 
 /* потребуется, чтобы выравнивать блок с адресом. В футере используется другое выравнивание */
 .header__address {
-  display: flex;
-  flex-direction: column;
-  max-width: 240px;
-  color: #000;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.35;
+  
 }
 
 .cover {
@@ -80,8 +77,9 @@
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: -125px;
+  background-position: center;
   background-size: cover;
+  height: 757px;
 }
 
 /* полупрозрачный блок поверх секции */
@@ -90,7 +88,6 @@
   inset: 0;
   z-index: 0;
   background: rgba(0,0,0, 0.6);
-  background-size: auto 95%;
 }
 
 /* заголовок */
@@ -110,7 +107,7 @@
 /* выравнивания строк текста и превращения их в блочный элемент */
 .aligned-text {
   display: block;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .aligned-text_center {
@@ -118,6 +115,7 @@
 }
 
 .aligned-text_right {
+  margin-top: 5px;
   text-align: right;
 }
 
@@ -139,7 +137,7 @@
   justify-content: right;
   align-items: center;
   gap: 78px;
-  margin-top: 135px;
+  margin-top: 127px;
 }
 
 /* текст подзаголовка */
@@ -172,41 +170,208 @@
 }
 
 .lots {
+  margin: 179px 20px 0px 20px;
+}
+
+/* заголовок секции */
+.lots__heading {
+  margin-left: 40px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* список карточек */
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* пункт списка карточки */
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 430px;
+  min-height: 450px;
+  margin-top: 27px;
+}
+
+/* ссылка, обрамляющая карточку */
+.card-link {
 
 }
 
-/*lots__heading — заголовок секции;
-lots__card-list — список карточек;
-lots__card-list-item — пункт списка карточки;
-card-link — ссылка, обрамляющая карточку;
-card — карточка;
-card_type_film, card_type_book и card_type_picture — классы, чтобы задать определённый фон каждой из карточек;
-overlay — он уже есть у вас в коде;
-card__title — заголовок карточки;
-card__text — текст карточки;
-lots__look-more-link — ссылка «Посмотреть больше».*/
+/* карточка */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px 50px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* определённый фон каждой из карточек */
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+} 
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+} 
+
+/* заголовок карточки */
+.card__title {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 1.2; /* 26.4px */
+  text-decoration: underline;
+  text-transform: uppercase;
+} 
+
+/* текст карточки */
+.card__text {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2; /* 24px */
+}
+
+/* ссылка «Посмотреть больше» */
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
 
 .about {
-
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+  margin: 146px 24px 0px 24px;
 }
 
-/*about__column — класс для колонок;
-about__logo — контейнер с логотипом;
-about__logo-image — изображение логотипа;
-about__title — заголовок секции;
-about__text — блок для текстов секции.*/
+/* класс для колонок */
+.about__column {
+ 
+}
+
+/* контейнер с логотипом */
+.about__logo {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  margin: 35px auto auto auto;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+/* изображение логотипа */
+.about__logo-image {
+  width: 60%; 
+}
+
+/* заголовок секции */
+.about__title {
+  margin-top: 136px;
+  margin-bottom: 100px;
+  color: #000;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* блок для текстов секции */
+.about__text {
+  margin-top: 24px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.2px;
+}
 
 .footer {
+  margin: 180px 50px 90px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: start;
+}
+
+/* блок навигации по списку ссылок */
+.footer__menu {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* список пунктов меню */
+.footer__menu-list {
+  list-style: none;
+} 
+
+/* пункт списка меню */
+.footer__menu-list-item {
 
 }
 
-/*address — такой класс уже есть в вашей вёрстке, все вложенные элементы аналогичны;
-footer__menu — блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом;
-footer__menu-list — список пунктов меню;
-footer__menu-list-item — пункт списка меню;
-footer__menu-link — ссылка меню;
-footer__menu-link_active — активная ссылка меню (без подчёркивания);
-footer__social-list — список ссылок на социальные сети. Можно не добавлять тег <nav>, потому что это ссылки на внешние ресурсы;
-footer__social-list-item — пункт списка ссылок на социальные сети;
-footer__social-link — ссылка на социальные сети;
-footer__social-icon — иконка социальной сети.*/
+/* ссылка меню */
+.footer__menu-link {
+  
+}
+
+/* активная ссылка меню (без подчёркивания) */
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+/* список ссылок на социальные сети */
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+}
+
+/* пункт списка ссылок на социальные сети */
+.footer__social-list-item {
+
+}
+
+/* ссылка на социальные сети */
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height:  48px;
+}
+
+/* иконка социальной сети */
+.footer__social-icon {
+
+}

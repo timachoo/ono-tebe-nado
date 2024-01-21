@@ -1,1 +1,1 @@
-Проект 1. Оно тебе надо
+Проект 1. Оно тебе надо: https://github.com/timachoo/ono-tebe-nado

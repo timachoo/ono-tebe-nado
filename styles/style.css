@@ -109,6 +109,7 @@
 /* выравнивания строк текста и превращения их в блочный элемент */
 .aligned-text {
   display: block;
+  margin-top: 20px;
 }
 
 .aligned-text_center {
@@ -149,7 +150,6 @@
   line-height: 28px; /* 127.273% */
   text-transform: uppercase;
   word-spacing: 18px;
-  
 }
 
 /* кнопка «Сделать ставку» */

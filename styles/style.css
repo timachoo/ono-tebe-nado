@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns:  1fr auto 1fr;
   align-items:center;
-  margin: 92px 24px 96px 24px;
+  margin: 92px 24px 94px 24px;
   padding: 0px 26px;
 }
 
@@ -94,7 +94,6 @@
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
-  line-height: 1.15; /* 115px */
   letter-spacing: 30px;
   text-transform: uppercase;
 }
@@ -102,16 +101,19 @@
 /* выравнивания строк текста и превращения их в блочный элемент */
 .aligned-text {
   display: block;
-  margin-top: 15px;
+  line-height: 1.15; /* 115px */
 }
 
 .aligned-text_center {
   text-align: center;
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .aligned-text_right {
-  margin-top: 5px;
   text-align: right;
+  line-height: 1;
 }
 
 /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */

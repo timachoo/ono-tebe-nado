@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+.header__links-list-item {
   list-style: circle;
 }
 
@@ -22,12 +25,15 @@
 /* ссылка */
 .header__link {
   color: #000;
+  font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: normal;
+  letter-spacing: 0.18px;
 }
 
 /* активная ссылка */
-.header__link_active .header__link {
+.header__link_active {
   text-decoration: none;
 }
 

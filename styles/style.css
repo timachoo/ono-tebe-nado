@@ -260,7 +260,7 @@
 }
 
 .about__column {
-  
+
 }
 
 /* контейнер с логотипом */
@@ -289,6 +289,12 @@
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.about__text__block {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 /* блок для текстов секции */

@@ -47,7 +47,9 @@
 /* картинка с логотипом */
 .header__logo-image {
   width: 148px;
-  height: 114px;
+  height: 105px;
+  object-fit: cover;
+  object-position: top;
 }
 
 /*контейнер с адресом*/

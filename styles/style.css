@@ -291,7 +291,7 @@
   text-transform: uppercase;
 }
 
-.about__text__block {
+.about__text-block {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -324,6 +324,15 @@
 .footer__menu-list {
   list-style: none;
 } 
+
+.footer__menu-link {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 /* активная ссылка меню (без подчёркивания) */
 .footer__menu-link_active {

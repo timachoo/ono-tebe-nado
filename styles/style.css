@@ -164,6 +164,7 @@
   text-align: center;
   text-transform: uppercase;
   background: transparent;
+  font-family: inherit;
 }
 
 .lots {

@@ -178,6 +178,7 @@
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 27px;
 }
 
 /* список карточек */
@@ -193,7 +194,6 @@
   flex-grow: 1;
   width: 334px;
   min-height: 563px;
-  margin-top: 27px;
 }
 
 /* карточка */

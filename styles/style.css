@@ -152,9 +152,7 @@
 .bet-button {
   width: 257px;
   height: 52px;
-  border: 1px;
-  border-style: solid;
-  border-color: #FFF;
+  border: 1px solid #FFF;
   padding: 12px 32px 12px 32px;
   color: #FFF;
   font-weight: 500;

@@ -48,7 +48,7 @@
 .header__logo-image {
   width: 148px;
   height: 105px;
-  object-fit: cover;
+  object-fit: fill;
   object-position: top;
 }
 
@@ -273,6 +273,7 @@
 .about__logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   margin: 35px auto auto auto;
@@ -282,7 +283,10 @@
 
 /* изображение логотипа */
 .about__logo-image {
-  width: 60%;
+  width: 148px;
+  height: 114px;
+  object-fit: fill;
+  object-position: center;
 }
 
 /* заголовок секции */

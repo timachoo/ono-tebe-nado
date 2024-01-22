@@ -259,6 +259,10 @@
   margin: 146px 24px 0px 24px;
 }
 
+.about__column {
+  
+}
+
 /* контейнер с логотипом */
 .about__logo {
   display: flex;

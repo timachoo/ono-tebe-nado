@@ -105,15 +105,15 @@
 }
 
 .aligned-text_center {
-  text-align: center;
-  line-height: 1;
   margin-top: 20px;
   margin-bottom: 20px;
+  line-height: 1;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   line-height: 1;
+  text-align: right;
 }
 
 /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
@@ -155,6 +155,7 @@
   border: 1px solid #FFF;
   padding: 12px 32px;
   color: #FFF;
+  font-family: inherit;
   font-weight: 500;
   font-size: 22px;
   font-style: normal;
@@ -162,7 +163,6 @@
   text-align: center;
   text-transform: uppercase;
   background: transparent;
-  font-family: inherit;
 }
 
 .lots {
@@ -171,6 +171,7 @@
 
 /* заголовок секции */
 .lots__heading {
+  margin-bottom: 27px;
   margin-left: 40px;
   color: #000;
   font-weight: 700;
@@ -178,7 +179,6 @@
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 27px;
 }
 
 /* список карточек */
@@ -265,10 +265,6 @@
   margin: 146px 24px 0px 24px;
 }
 
-.about__column {
-
-}
-
 /* контейнер с логотипом */
 .about__logo {
   display: flex;
@@ -336,11 +332,11 @@
 
 .footer__menu-link {
   color: #000;
-  text-align: center;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+  text-align: center;
 }
 
 /* активная ссылка меню (без подчёркивания) */

@@ -191,8 +191,8 @@
 /* пункт списка карточки */
 .lots__card-list-item {
   flex-grow: 1;
-  width: 430px;
-  min-height: 450px;
+  width: 334px;
+  min-height: 563px;
   margin-top: 27px;
 }
 

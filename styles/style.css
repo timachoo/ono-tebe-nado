@@ -183,6 +183,7 @@
 /* список карточек */
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
 }

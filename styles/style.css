@@ -350,6 +350,8 @@
   flex-wrap: wrap;
   gap: 48px;
   list-style: none;
+  max-width: 240px;
+  justify-content: end;
 }
 
 /* ссылка на социальные сети */
